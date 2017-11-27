@@ -21,7 +21,7 @@ class IngredientsController < ApplicationController
 
   def update
     @ingredient = Ingredient.update(ingredient_params)
-    redirect_to 'show'
+    render 'show'
   end
 
   def ingredient_params
