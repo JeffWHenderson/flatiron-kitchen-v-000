@@ -19,6 +19,7 @@ class IngredientsController < ApplicationController
   end
 
   def update
+    Ingredient.update(ingredient_params)
     redirect_to 'show'
   end
 
