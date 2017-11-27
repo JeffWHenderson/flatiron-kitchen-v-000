@@ -3,7 +3,7 @@ class RecipesController < ApplicationController
   end
 
   def show
-    raise params.inpsect
+    
   end
 
   def new
