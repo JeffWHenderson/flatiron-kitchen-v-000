@@ -3,7 +3,7 @@ class RecipesController < ApplicationController
   end
 
   def show
-    
+
   end
 
   def new
@@ -20,6 +20,7 @@ class RecipesController < ApplicationController
   end
 
   def update
+    raise params.inspect
     redirect_to 'show'
   end
 
