@@ -3,7 +3,7 @@ class RecipesController < ApplicationController
   end
 
   def show
-    @ingredient = Ingredient.find(params[:id])
+    @recipe = Recipe.find(params[:id])
   end
 
   def new
