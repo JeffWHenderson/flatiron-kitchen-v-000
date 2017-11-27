@@ -10,7 +10,8 @@ class IngredientsController < ApplicationController
   end
 
   def create
-    redirect_to 'show'
+    Ingredient.create(ingredient_params)
+    render 'show'
   end
 
   def edit
