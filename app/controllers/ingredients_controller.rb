@@ -20,4 +20,7 @@ class IngredientsController < ApplicationController
   def update
     redirect_to 'show'
   end
+
+  def ingredients_params
+    params.require(:ingredient).permit(:name)
 end
