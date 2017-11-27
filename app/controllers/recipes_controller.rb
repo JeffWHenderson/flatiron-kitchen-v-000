@@ -11,7 +11,7 @@ class RecipesController < ApplicationController
   end
 
   def create
-
+    raise params.inspect
     render 'show'
   end
 
