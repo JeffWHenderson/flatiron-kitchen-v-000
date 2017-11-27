@@ -10,6 +10,7 @@ class RecipesController < ApplicationController
   end
 
   def create
+    raise params.inspect
     redirect_to 'show'
   end
 
