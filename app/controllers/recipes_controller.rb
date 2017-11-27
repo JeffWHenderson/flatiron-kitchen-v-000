@@ -20,8 +20,9 @@ class RecipesController < ApplicationController
   end
 
   def update
-    raise params.inspect
-    redirect_to 'show'
+    @recipe = Recipe.find(params[:id])
+    @recipe.update
+    render 'show'
   end
 
   private
