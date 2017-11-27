@@ -11,7 +11,7 @@ class IngredientsController < ApplicationController
   end
 
   def create
-    Ingredient.create(ingredient_params)
+    @ingredient = Ingredient.create(ingredient_params)
     render 'show'
   end
 
