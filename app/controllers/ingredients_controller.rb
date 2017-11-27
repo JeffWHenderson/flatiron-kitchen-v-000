@@ -20,7 +20,7 @@ class IngredientsController < ApplicationController
   end
 
   def update
-    @ingredient = Ingredient.update(ingredient_params)
+    @ingredient = Ingredient.update(params[:name])
     render 'show'
   end
 
