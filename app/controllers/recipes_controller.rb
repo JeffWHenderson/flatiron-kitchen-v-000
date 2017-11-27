@@ -20,4 +20,10 @@ class RecipesController < ApplicationController
   def update
     redirect_to 'show'
   end
+
+  private
+
+  def recipe_params
+    params.require(:recipe).permit(:name)
+  end
 end
