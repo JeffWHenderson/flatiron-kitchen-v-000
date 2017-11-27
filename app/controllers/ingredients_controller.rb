@@ -23,7 +23,7 @@ class IngredientsController < ApplicationController
     redirect_to 'show'
   end
 
-  def ingredients_params
+  def ingredient_params
     params.require(:ingredient).permit(:name)
   end
 end
